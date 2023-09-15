@@ -1,1 +1,10 @@
+.App > input {
+    display: none;
+}
 
+.container {
+    width: 100%;
+    position: relative;
+    border-top: 2px solid gray;
+
+}

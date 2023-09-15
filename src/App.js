@@ -2,18 +2,21 @@ import './App.css';
 import Body from './component/Body';
 import Footer from './component/Footer';
 import Header from './component/Header';
-import {Button, } from './utils/Button';
+import Sidebar from './component/Sidebar';
+
 
 function App() {
   return (
     <div className="App">
-      <Header 
-        left={<Button location={"Header"} text ={"메뉴"} />} 
-        title={"모두의 대피소"}     
-        rigth={"현재 위치"}  
-      />
-      <Body />
-      <Footer />
+      <Sidebar />
+      <div className="Content">
+        <Header 
+          title={"모두의 대피소"}     
+          rigth={"현재 위치"}  
+        />
+        <Body />
+        <Footer />
+      </div>
     </div>
   );
 }

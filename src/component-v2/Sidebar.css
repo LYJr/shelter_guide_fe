@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    top:0;
+    right: -300px;
+    width:300px;
+    height: 100%;
+    background-color: mediumaquamarine;
+    border: 1px solid #eee;
+    z-index:30;
+    transition: .35s;
+}
+
+.area_desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+input[id="menuicon"]:checked ~ header .MenuButton {
+    z-index: 2;
+    left: 305px;
+}
+input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(2) {
+    left:50%;
+    transform: translate(-50%, -50%) scale(2);
+    opacity:0;
+}
+input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(3) {
+    bottom: 44%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+input[id="menuicon"]:checked ~ .container .sidebar {left: 0;}

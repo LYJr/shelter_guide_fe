@@ -1,12 +1,3 @@
-/* .Footer {
-    border-top: 1px solid gray;
-    padding-bottom: auto;
-    padding-left: 1%;
-    padding-right: 1%;
+.Footer {
+    background-color: palevioletred;
 }
-
-.Footer > p {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-} */

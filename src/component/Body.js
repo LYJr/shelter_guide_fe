@@ -1,14 +1,11 @@
-import Table from "../utils/Table";
 import "./Body.css"
-import CustomMapView from "./CustomMapView"
 
 
 function Body () {
     return (
-    <div className="Body">
-        <CustomMapView />
-        <Table />
-    </div>
+        <div className="Body">
+            <span class="area_desc">바디 영역</span>
+        </div>
     )
 }
 

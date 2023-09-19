@@ -1,11 +1,10 @@
-.sidebar {
+.Sidebar {
     position: fixed;
     top:0;
     right: -300px;
     width:300px;
-    height: 100%;
+    height: 100vh;
     background-color: mediumaquamarine;
-    border: 1px solid #eee;
     z-index:30;
     transition: .35s;
 }
@@ -24,17 +23,15 @@ input[id="menuicon"]:checked ~ header .MenuButton {
 }
 input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(1) {
     top: 50%;
-    transform: translate(-50%, -50%) rotate(135deg);
+    transform: translate(30px) rotate(135deg);
 }
 input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(2) {
     left:50%;
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(50%, 50%) scale(2);
     opacity:0;
 }
 input[id="menuicon"]:checked ~ header .MenuButton span:nth-child(3) {
-    bottom: 44%;
-    left:50%;
-    transform: translate(-50%, -50%) rotate(-135deg);
+    transform: translate(30px, -6px) rotate(-135deg);
 }
 
-input[id="menuicon"]:checked ~ .container .sidebar {left: 0;}
+input[id="menuicon"]:checked ~ .Container .Sidebar {left: 0;}

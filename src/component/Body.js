@@ -1,10 +1,15 @@
+import KakaoMap from "../utils/kakao-api/KakaoMap";
+import Table from "../utils/Table"
 import "./Body.css"
 
 
 function Body () {
     return (
         <div className="Body">
-            <span class="area_desc">바디 영역</span>
+            <KakaoMap /> 
+            <div className="검색창">검색창 </div>
+            <Table />
+            <div className="pageButton">페이징 버튼</div>
         </div>
     )
 }

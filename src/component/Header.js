@@ -1,13 +1,12 @@
 import "./Header.css"
-import { MenuButton } from "../utils/Button";
 
-
-function Header ({center, rigth}) {
+function Header ({left, center, rigth}) {
     return (
         <header>
             <div className="Header">
-                <MenuButton />
-
+                <div className="left">
+                    {left}
+                </div>
                 <div className="center"> 
                     {center}
                 </div>

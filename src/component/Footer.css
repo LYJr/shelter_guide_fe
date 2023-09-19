@@ -1,3 +1,9 @@
 .Footer {
-    background-color: palevioletred;
+    width: 100%;
+    border-top: 2px solid gray;
+}
+
+.Footer > p {
+    margin-top: 5px;
+    margin-left: 40px;
 }

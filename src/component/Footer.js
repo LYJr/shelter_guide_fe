@@ -3,7 +3,8 @@ import './Footer.css'
 function Footer () {
     return (
     <div className="Footer">
-        <h1>푸터</h1>
+        <p>FE - Resian</p>
+        <p>BE - 설랭큐브</p>
     </div>
     )
 }
